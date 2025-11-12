@@ -10,16 +10,7 @@ public class MaterialBibliografico {
 		this.categoria=Categoria;
 		this.año=Año;
 	}
-	public String getTitulo() {
-		return titulo;
-	}
-	public String getAutor() {
-		return autor;
-	}
-	public String getCategoria() {
-		return categoria;
-	}
-	public int getAño() {
-		return año;
+	public String getDatos() {
+		return "Título: " + titulo + ", Autor: " + autor + ", Categoría: " + categoria + ", Año: " + año;
 	}
 }
