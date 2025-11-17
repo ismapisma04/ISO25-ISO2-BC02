@@ -1,4 +1,4 @@
-package BC02.it1;
+package src.main.java.BC02.it1;
 
 /**
  * Hello world!

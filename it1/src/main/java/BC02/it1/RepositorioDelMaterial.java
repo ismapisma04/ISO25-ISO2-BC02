@@ -1,4 +1,4 @@
-package BC02.it1;
+package src.main.java.BC02.it1;
 import java.sql.*;
 public class RepositorioDelMaterial {
 	private static final String URL = "jdbc:mysql://localhost:3306/biblioteca";
@@ -23,7 +23,7 @@ public class RepositorioDelMaterial {
 
         if (conn == null) return null;
 
-        String sql = "SELECT titulo, autor, categoria, año FROM materialbibliografico " +
+        String sql = "SELECT titulo, autor, categoria, anio_publicacion FROM biblioteca.material_bibliografico " +
                      "WHERE titulo LIKE ? OR autor LIKE ? OR categoria LIKE ?";
 
         try (PreparedStatement stmt = conn.prepareStatement(sql)) {
@@ -38,7 +38,7 @@ public class RepositorioDelMaterial {
                     rs.getString("titulo"),
                     rs.getString("autor"),
                     rs.getString("categoria"),
-                    rs.getInt("año")
+                    rs.getInt("anio_publicacion")
                 );
             } else {
                 System.out.println("No se encontraron resultados para el criterio: " + criterio);
