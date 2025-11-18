@@ -1,4 +1,4 @@
-package src.main.java.BC02.it1;
+package BC02.it1;
 
 public class MaterialBibliografico {
 	private String titulo;
