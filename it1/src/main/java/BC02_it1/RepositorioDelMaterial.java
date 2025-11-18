@@ -1,4 +1,4 @@
-package BC02.it1;
+package BC02_it1;
 import java.sql.*;
 public class RepositorioDelMaterial {
 	private static final String URL = "jdbc:mysql://localhost:3306/biblioteca";

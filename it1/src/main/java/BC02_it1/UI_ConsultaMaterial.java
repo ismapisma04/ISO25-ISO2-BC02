@@ -1,4 +1,4 @@
-package BC02.it1;
+package BC02_it1;
 import java.util.*;
 public class UI_ConsultaMaterial {
 	private String criterioBusqueda;
