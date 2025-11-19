@@ -1,4 +1,4 @@
-package src.main.java.BC02.it1;
+package BC02_it1;
 
 public class API_ConsultaMaterial {
 	public MaterialBibliografico recibirSolicitud(String criterio) {
