@@ -41,5 +41,4 @@ public class API_GestionarUsuarios {
     public List<UsuarioBiblioteca> allMaterial() throws GestionUsuariosException{
         return this.servicio.allMaterial();
     }
-
 }
