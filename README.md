@@ -16,4 +16,4 @@ Grupo de trabajo: BC02
 
 ***
 
-**[Enlace repositorio problema 3](https://github.com/Yisuscrack210/Problema-3-ISO-II)**
+**[Enlace repositorio problema 3]([https://github.com/Yisuscrack210/Problema-3-ISO-II](https://github.com/Yisuscrack210/ISO2-2025-BC02-Testing-P3))**
