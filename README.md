@@ -15,6 +15,5 @@ Grupo de trabajo: BC02
 | David Ruiz Sánchez |	David.Ruiz27@alu.uclm.es |	Encargado del análisis |
 
 ***
-**[Enlace repositorio problema 2](https://github.com/Yisuscrack210/ISO2-2025-BC02-Testing-P2)**
-
+**[Enlace repositorio problema 2](https://github.com/Yisuscrack210/ISO2-2025-BC02-Testing-P2)**                                                                                         
 **[Enlace repositorio problema 3](https://github.com/Yisuscrack210/ISO2-2025-BC02-Testing-P3)**
