@@ -4,89 +4,78 @@ import java.time.LocalDate;
 
 public class PrestamosBiblioteca {
 
-    private int id;
-    private String usuario_dni;
-    private String material_isbn;
-    private LocalDate fecha_prestamo;
-    private LocalDate fecha_devolucion;
-    private boolean devuelto;
+    private String idUsuario;
+    private String idEjemplar;
+    private LocalDate fechaInicio;
+    private LocalDate fechaFin;
+    private String estado;
 
     public PrestamosBiblioteca() {
-        this.id = 0;
-        this.usuario_dni = "";
-        this.material_isbn = "";
-        this.fecha_prestamo = null;
-        this.fecha_devolucion = null;
-        this.devuelto = false;
+        this.idUsuario = "";
+        this.idEjemplar = "";
+        this.fechaInicio = null;
+        this.fechaFin = null;
+        this.estado = "";
     }
 
-    public PrestamosBiblioteca(int id, String usuario_dni, String material_isbn,
-                               LocalDate fecha_prestamo, LocalDate fecha_devolucion, boolean devuelto) {
+    public PrestamosBiblioteca(String idUsuario, String idEjemplar,
+                               LocalDate fechaInicio, LocalDate fechaFin, String estado) {
 
-        this.id = id;
-        this.usuario_dni = usuario_dni;
-        this.material_isbn = material_isbn;
-        this.fecha_prestamo = fecha_prestamo;
-        this.fecha_devolucion = fecha_devolucion;
-        this.devuelto = devuelto;
+        this.idUsuario = idUsuario;
+        this.idEjemplar = idEjemplar;
+        this.fechaInicio = fechaInicio;
+        this.fechaFin = fechaFin;
+        this.estado = estado;
     }
 
-    public int getId() {
-        return id;
+    public String getIdUsuario() {
+        return idUsuario;
     }
 
-    public String getUsuario_dni() {
-        return usuario_dni;
+    public String getIdEjemplar() {
+        return idEjemplar;
     }
 
-    public String getMaterial_isbn() {
-        return material_isbn;
+    public LocalDate getFechaInicio() {
+        return fechaInicio;
     }
 
-    public LocalDate getFecha_prestamo() {
-        return fecha_prestamo;
+    public LocalDate getFechaFin() {
+        return fechaFin;
     }
 
-    public LocalDate getFecha_devolucion() {
-        return fecha_devolucion;
-    }
-
-    public boolean getDevuelto() {
-        return devuelto;
+    public String getEstado() {
+        return estado;
     }
 
     public String getDatos() {
-        return id + ";" + usuario_dni + ";" + material_isbn + ";" +
-               fecha_prestamo + ";" + fecha_devolucion + ";" + devuelto;
+        return idUsuario + ";" + idEjemplar + ";" +
+               fechaInicio + ";" + fechaFin + ";" + estado;
     }
 
     @Override
     public String toString() {
-        return "Préstamo " + id + " - " + usuario_dni + " - " + material_isbn;
+        return "Préstamo para el usuario " + idUsuario + " del ejemplar " + idEjemplar ;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setId(String idUsuario) {
+        this.idUsuario = idUsuario;
     }
 
-    public void setUsuario_dni(String usuario_dni) {
-        this.usuario_dni = usuario_dni;
+    public void setUsuario_dni(String idEjemplar) {
+        this.idEjemplar = idEjemplar;
     }
 
-    public void setMaterial_isbn(String material_isbn) {
-        this.material_isbn = material_isbn;
+    public void setFechaInicio(LocalDate fechaInicio) {
+        this.fechaInicio = fechaInicio;
     }
 
-    public void setFecha_prestamo(LocalDate fecha_prestamo) {
-        this.fecha_prestamo = fecha_prestamo;
+    public void setFecha_devolucion(LocalDate fechaFin) {
+        this.fechaFin = fechaFin;
     }
 
-    public void setFecha_devolucion(LocalDate fecha_devolucion) {
-        this.fecha_devolucion = fecha_devolucion;
-    }
-
-    public void setDevuelto(boolean devuelto) {
-        this.devuelto = devuelto;
+    public void setDevuelto(String estado) {
+        this.estado = estado;
     }
 }
 
