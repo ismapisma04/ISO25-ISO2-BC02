@@ -1,6 +1,7 @@
 package es.uclm.iso2.biblioteca.servicio;
 
 import es.uclm.iso2.biblioteca.dao.UsuarioDAO;
+import es.uclm.iso2.biblioteca.dao.MaterialDAO;
 import es.uclm.iso2.biblioteca.dominio.MaterialBibliografico;
 import es.uclm.iso2.biblioteca.dominio.UsuarioBiblioteca;
 
@@ -63,7 +64,6 @@ public class ServicioGestionUsuarios {
     	
     	return this.usuarioDAO.findByDni(dni);
     }
-    
     
     public List<UsuarioBiblioteca> allUsuario() throws GestionUsuariosException{
     	

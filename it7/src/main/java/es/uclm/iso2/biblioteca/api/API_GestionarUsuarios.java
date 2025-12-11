@@ -36,7 +36,7 @@ public class API_GestionarUsuarios {
     }
 
     public List<UsuarioBiblioteca> allUsuarios() throws GestionUsuariosException {
-        return servicio.allMaterial();
+        return servicio.allUsuario();
     }
 }
 
