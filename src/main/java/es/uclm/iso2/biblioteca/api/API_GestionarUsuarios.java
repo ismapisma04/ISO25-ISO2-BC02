@@ -1,6 +1,5 @@
 package es.uclm.iso2.biblioteca.api;
 
-
 import es.uclm.iso2.biblioteca.dominio.UsuarioBiblioteca;
 import es.uclm.iso2.biblioteca.servicio.GestionUsuariosException;
 import es.uclm.iso2.biblioteca.servicio.ServicioGestionUsuarios;
@@ -16,29 +15,28 @@ public class API_GestionarUsuarios {
         try {
             this.servicio = new ServicioGestionUsuarios();
         } catch (SQLException e) {
-            // Error técnico al inicializar la capa de servicio
-            throw new RuntimeException("Error inicializando el servicio de material", e);
+            throw new RuntimeException("Error inicializando ServicioGestionUsuarios: " + e.getMessage(), e);
         }
     }
 
-
-    public int insertMaterial(UsuarioBiblioteca u) throws GestionUsuariosException {
-        return this.servicio.insertUsuario(u);
+    public int insertUsuaio(UsuarioBiblioteca u) throws GestionUsuariosException {
+        return servicio.insertUsuario(u);
     }
 
-    public int deleteMaterial(String dni) throws GestionUsuariosException {
-        return this.servicio.deleteUsuario(dni);
+    public int deleteUsuario(String dni) throws GestionUsuariosException {
+        return servicio.deleteUsuario(dni);
     }
 
-    public int updateMaterial(UsuarioBiblioteca u) throws GestionUsuariosException {
-        return this.servicio.uptadeUsuario(u);
+    public int updateUsuaio(UsuarioBiblioteca u) throws GestionUsuariosException {
+        return servicio.uptadeUsuario(u);
     }
 
-    public UsuarioBiblioteca searchMaterial(String dni) throws GestionUsuariosException {
-        return this.servicio.searchMaterial(dni);
+    public UsuarioBiblioteca searchUsuario(String dni) throws GestionUsuariosException {
+        return servicio.searchMaterial(dni);
     }
 
-    public List<UsuarioBiblioteca> allMaterial() throws GestionUsuariosException{
-        return this.servicio.allMaterial();
+    public List<UsuarioBiblioteca> allUsuarios() throws GestionUsuariosException {
+        return servicio.allUsuario();
     }
 }
+

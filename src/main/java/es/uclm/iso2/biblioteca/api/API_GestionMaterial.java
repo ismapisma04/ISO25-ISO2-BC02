@@ -15,29 +15,28 @@ public class API_GestionMaterial {
         try {
             this.servicio = new ServicioGestionMaterial();
         } catch (SQLException e) {
-            // Error técnico al inicializar la capa de servicio
-            throw new RuntimeException("Error inicializando el servicio de material", e);
+            throw new RuntimeException("Error inicializando ServicioGestionMaterial: " + e.getMessage(), e);
         }
     }
 
     public int insertMaterial(MaterialBibliografico m) throws GestionMaterialException {
-        return this.servicio.insertMaterial(m);
+        return servicio.insertMaterial(m);
     }
 
     public int deleteMaterial(String isbn) throws GestionMaterialException {
-        return this.servicio.deleteMaterial(isbn);
+        return servicio.deleteMaterial(isbn);
     }
 
     public int updateMaterial(MaterialBibliografico m) throws GestionMaterialException {
-        return this.servicio.uptadeMaterial(m);
+        return servicio.uptadeMaterial(m);
     }
 
     public MaterialBibliografico searchMaterial(String isbn) throws GestionMaterialException {
-        return this.servicio.searchMaterial(isbn);
+        return servicio.searchMaterial(isbn);
     }
 
-    public List<MaterialBibliografico> allMaterial() throws GestionMaterialException{
-        return this.servicio.allMaterial();
+    public List<MaterialBibliografico> allMaterial() throws GestionMaterialException {
+        return servicio.allMaterial();
     }
 }
 
