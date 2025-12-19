@@ -22,23 +22,24 @@ public class API_GestionarUsuarios {
     }
 
 
-    public int insertMaterial(UsuarioBiblioteca u) throws GestionUsuariosException {
+    public int insertUsuaio(UsuarioBiblioteca u) throws GestionUsuariosException {
         return this.servicio.insertUsuario(u);
     }
 
-    public int deleteMaterial(String dni) throws GestionUsuariosException {
+    public int deleteUsuario(String dni) throws GestionUsuariosException {
         return this.servicio.deleteUsuario(dni);
     }
 
-    public int updateMaterial(UsuarioBiblioteca u) throws GestionUsuariosException {
+    public int updateUsuaio(UsuarioBiblioteca u) throws GestionUsuariosException {
         return this.servicio.uptadeUsuario(u);
     }
 
-    public UsuarioBiblioteca searchMaterial(String dni) throws GestionUsuariosException {
+    public UsuarioBiblioteca searchUsuario(String dni) throws GestionUsuariosException {
         return this.servicio.searchMaterial(dni);
     }
 
-    public List<UsuarioBiblioteca> allMaterial() throws GestionUsuariosException{
+    public List<UsuarioBiblioteca> allUsuarios() throws GestionUsuariosException{
         return this.servicio.allMaterial();
     }
+
 }
