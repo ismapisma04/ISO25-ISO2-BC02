@@ -84,19 +84,19 @@ public class ServicioGestionMaterial {
             throw new GestionMaterialException("El material no puede ser nulo.");
         }
 
-        if (m.getTitulo() == null || m.getTitulo().isBlank()) {
+        if (m.getTitulo() == null || m.getTitulo()=="") {
             throw new GestionMaterialException("El título es obligatorio.");
         }
 
-        if (m.getAutor() == null || m.getAutor().isBlank()) {
+        if (m.getAutor() == null || m.getAutor()=="") {
             throw new GestionMaterialException("El autor es obligatorio.");
         }
 
-        if (m.getIsbn() == null || m.getIsbn().isBlank()) {
+        if (m.getIsbn() == null || m.getIsbn()=="") {
             throw new GestionMaterialException("El ISBN es obligatorio.");
         }
         
-        if (m.getCategoria() == null || m.getCategoria().isBlank()) {
+        if (m.getCategoria() == null || m.getCategoria()=="") {
             throw new GestionMaterialException("La categoria es obligatoria.");
         }
 
