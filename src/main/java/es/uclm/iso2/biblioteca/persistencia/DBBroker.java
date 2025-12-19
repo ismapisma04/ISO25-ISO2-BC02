@@ -13,7 +13,6 @@ public class DBBroker {
 
     public DBBroker() {
         try {
-            // >>> AJUSTA AQUÍ TU BBDD <<<
             DBBroker.connectionString = "jdbc:mysql://localhost:3306/biblioteca?useSSL=false&serverTimezone=UTC";
             String user = "root";
             String pass = "1234"; 
