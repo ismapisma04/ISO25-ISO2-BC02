@@ -88,19 +88,19 @@ public class ServicioGestionUsuarios {
             throw new GestionUsuariosException("El usuario no puede ser nulo.");
         }
 
-        if (u.getNombre() == null || u.getNombre().isBlank()) {
+        if (u.getNombre() == null || u.getNombre()=="") {
             throw new GestionUsuariosException("El nombre es obligatorio.");
         }
 
-        if (u.getApellidos() == null || u.getApellidos().isBlank()) {
+        if (u.getApellidos() == null || u.getApellidos()=="") {
             throw new GestionUsuariosException("El apellido es obligatorio.");
         }
 
-        if (u.getEmail() == null || u.getEmail().isBlank()) {
+        if (u.getEmail() == null || u.getEmail()=="") {
             throw new GestionUsuariosException("El email es obligatorio.");
         }
 
-        if (u.getDni() == null || u.getDni().isBlank()) {
+        if (u.getDni() == null || u.getDni()=="") {
             throw new GestionUsuariosException("El DNI es obligatorio.");
         }
         
